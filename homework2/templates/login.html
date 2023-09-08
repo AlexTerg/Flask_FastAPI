@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Привет {{ name }}</h1>
+    <p class="lead">Если ты попал на эту страницу, значит ты успешно выполнил вход!!!</p>
+    <hr class="my-4">
+    <p>Что бы выйти, нажми кнопку выхода</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href=" {{ url_for('logout') }}" role="button">Выход</a>
+    </p>
+</div>
+{% endblock %}
